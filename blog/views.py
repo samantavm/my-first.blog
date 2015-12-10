@@ -6,7 +6,4 @@ from .models import Post
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'blog/post_list.html', {'posts': posts})
-<<<<<<< HEAD
-=======
 
->>>>>>> 2ac88adcbb80d8425743fa3ac8308c58b5a4bea1

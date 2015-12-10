@@ -22,6 +22,7 @@
                 <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
             </div>
 
+<<<<<<< HEAD
         {% for post in posts %}
             <div>
                 <p>published: {{ post.published_date }}</p>
@@ -29,6 +30,15 @@
                 <p>{{ post.text|linebreaks }}</p>
             </div>
         {% endfor %}
+=======
+            {% for post in posts %}
+                <div>
+                    <p>published: {{ post.published_date }}</p>
+                    <h1><a href="">{{ post.title }}</a></h1>
+                    <p>{{ post.text|linebreaks }}</p>
+                </div>
+            {% endfor %}
+>>>>>>> 2ac88adcbb80d8425743fa3ac8308c58b5a4bea1
 </body>
 </html>
 

@@ -1,12 +1,7 @@
-<<<<<<< HEAD
 from django.shortcuts import render, get_object_or_404, redirect
-=======
-from django.shortcuts import render, get_object_or_404
->>>>>>> 336f2cbdce4ae9d50d900d68150f900ea3e43132
 from django.utils import timezone
 from .models import Post
 from .forms import PostForm
-
 
 
 def post_list(request):
